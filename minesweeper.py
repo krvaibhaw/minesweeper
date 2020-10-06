@@ -151,7 +151,7 @@ class Sentence():
         
         if cell in self.cells:
             self.cells.discard(cell)
-
+ 
 
 class MinesweeperAI():
     """
