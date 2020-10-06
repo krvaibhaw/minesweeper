@@ -27,7 +27,6 @@ class Minesweeper():
         self.height = height
         self.width = width
         self.mines = set()
-        self.start=False
 
         # Initialize an empty field with no mines
         self.board = []
