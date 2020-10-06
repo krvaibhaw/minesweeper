@@ -84,7 +84,7 @@ class Minesweeper():
 
                 # Ignore the cell itself
                 if (i, j) == cell:
-                    break
+                    continue
 
                 # Update count if cell in bounds and is mine
                 if 0 <= i < self.height and 0 <= j < self.width:
@@ -123,7 +123,7 @@ class Sentence():
         """
         
         if len(self.cells) == self.count:
-            return self.cells
+            return self.cells, self.count
 
     def known_safes(self):
         """
