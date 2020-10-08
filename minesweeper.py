@@ -123,7 +123,7 @@ class Sentence():
         """
         
         if len(self.cells) == self.count:
-            return self.cells, self.count
+            return self.cells
 
     def known_safes(self):
         """
