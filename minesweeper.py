@@ -237,8 +237,10 @@ class MinesweeperAI():
 
 
     def nearby_cells(self, cell):
+        
         """
         For getting all the nearby cells
+        
         """
         cells = set()
 
@@ -254,7 +256,9 @@ class MinesweeperAI():
         return cells
 
     def add_knowledge(self, cell, count):
+        
         """
+        
         Called when the Minesweeper board tells us, for a given
         safe cell, how many neighboring cells have mines in them.
 
@@ -267,14 +271,20 @@ class MinesweeperAI():
                if it can be concluded based on the AI's knowledge base
             5) add any new sentences to the AI's knowledge base
                if they can be inferred from existing knowledge
+        
         """
         
         self.moves_made.add(cell)
 
-        if cell not in self.safes:    # Marking a cell safe
+        # Marking a cell safe
+
+        if cell not in self.safes:    
             self.mark_safe(cell)
 
-        nearby = self.nearby_cells(cell)       # Getting all nearby cells
+        
+        # Getting all nearby cells
+
+        nearby = self.nearby_cells(cell)       
 
         nearby -= self.safes | self.moves_made     
 
@@ -286,23 +296,31 @@ class MinesweeperAI():
         new_mines = set()
 
         for sentence in self.knowledge:
+            
             if len(sentence.cells) == 0:
                 self.knowledge.remove(sentence)
+            
             else:
                 tmp_new_safes = sentence.known_safes()
                 tmp_new_mines = sentence.known_mines()
 
+                
                 if type(tmp_new_safes) is set:
                     new_safes |= tmp_new_safes
 
+                
                 if type(tmp_new_mines) is set:
                     new_mines |= tmp_new_mines
 
+        
         for safe in new_safes:
             self.mark_safe(safe)
 
+        
         for mine in new_mines:
             self.mark_mine(mine)
+
+        
 
         prev_sentence = new_sentence
 
@@ -325,6 +343,8 @@ class MinesweeperAI():
         self.knowledge += new_inferences
 
     def make_safe_move(self):
+        
+
         """
         Returns a safe cell to choose on the Minesweeper board.
         The move must be known to be safe, and not already a move
@@ -345,11 +365,16 @@ class MinesweeperAI():
 
 
     def make_random_move(self):
+        
+
         """
+        
         Returns a move to make on the Minesweeper board.
         Should choose randomly among cells that:
             1) have not already been chosen, and
             2) are not known to be mines
+        
+
         """
         
 
