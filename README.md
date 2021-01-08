@@ -32,6 +32,8 @@
 <img src="/preview/preview.gif">
 </p>
 
+Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.
+
 <br>
 Feel free to follow along the code provided along with mentioned comments for 
 <br>better understanding of the project, if any issues feel free to reach me out.
