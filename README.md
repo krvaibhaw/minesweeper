@@ -33,6 +33,7 @@ Minesweeper is a single-player puzzle video game. The objective of the game is t
 	$ python runner.py
 ```
 
+
 <br>
 Feel free to follow along the code provided along with mentioned comments for 
 <br>better understanding of the project, if any issues feel free to reach me out.
