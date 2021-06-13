@@ -5,12 +5,21 @@
 ![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)
 
 ![](https://img.shields.io/badge/Excitement-High-red)
-![](https://img.shields.io/badge/Maintained-Yes-blue)
+![](https://img.shields.io/badge/Maintained-Yes-indigo)
 ![](https://img.shields.io/badge/Pull_Requests-Accepting-yellow)
+![](https://img.shields.io/github/forks/krvaibhaw/minesweeper)
+![](https://img.shields.io/github/contributors/krvaibhaw/minesweeper)
 ![](https://img.shields.io/github/issues/krvaibhaw/minesweeper)
+![](https://img.shields.io/github/stars/krvaibhaw/minesweeper)
+
+![](https://img.shields.io/badge/Contributions-Accepting-pink)
+![](https://img.shields.io/github/license/krvaibhaw/minesweeper)
+[![](https://img.shields.io/badge/By_Me_A_Coffee-Paypal-skyblue)](https://www.paypal.com/paypalme/krvaibhaw/100)
 
 ![](https://img.shields.io/badge/Python-blue)
 ![](https://img.shields.io/badge/HTML-blueviolet)
+
+<br>
 
 <p align="center">
 <img src="/preview/preview.gif">
@@ -21,16 +30,26 @@ Minesweeper is a single-player puzzle video game. The objective of the game is t
 ## Running Minesweeper
 
 1. Make sure [Python 3.6+](https://www.python.org/downloads/) is installed.
-2. Install [Flask Web Framework](https://flask.palletsprojects.com/en/2.0.x/).
-3. Install requirements  
+2. Install [Pygame](https://www.pygame.org/news).
+3. Clone this repository :
+```
+    $ git clone https://github.com/krvaibhaw/minesweeper.git
+```
+4. Change Directory:
+```
+    $ cd minesweeper
+```
+5. Install requirements  
 ```
     $ pip install requirements.txt
 ``` 
-4. Running the program:
+6. Running the program:
 ```
-	$ git clone https://github.com/krvaibhaw/minesweeper.git
-	$ cd minesweeper
-	$ python runner.py
+    $ python runner.py
+```
+7. Output : 
+```
+    GUI interface for Minesweeper game.
 ```
 
 <br>
